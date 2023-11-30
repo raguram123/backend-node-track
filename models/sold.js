@@ -1,6 +1,6 @@
 import mongoose from "mongoose "
 
-const StoreSchema = new mongoose.Schema(
+const SoldSchema = new mongoose.Schema(
   {
     userID: {
       type: mongoose.Schema.Types.ObjectId,
@@ -28,5 +28,5 @@ const StoreSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const store = mongoose.model("store", StoreSchema);
-module.exports = store;
+const sold = mongoose.model("sold", SoldSchema);
+module.exports = sold;
